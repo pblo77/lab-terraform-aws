@@ -2,7 +2,7 @@ cuenta           = "cuenta"
 proyecto         = "proyecto"
 key_name         = "nombrekeypair"
 private_key_path = "./nombrekeypair.pem"
-vpc_id           = "idvpc"
+vpc_id           = "vpc-07c5a1e63b9041468"
 
 tags = {
   "tag1" = "valor"
@@ -13,7 +13,7 @@ ec2_config = {
     role_name     = "nombredelrolacrear"
     ami           = "ami-0c02fb55956c7d316"
     instance_type = "t2.micro"
-    subnet_id     = "subnetid"
+    subnet_id     = "subnet-0751ad9f772ad8cb8"
     policy_arn    = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
     policy_arn1   = "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
     tagsec2 = {
@@ -32,7 +32,7 @@ sg_config = {
   instance_1 = {
     name                 = "ause-sg-cuenta-proyecto"
     description          = "Descripcion para grupo de seguridad"
-    vpc_id               = "vpc-id"
+    vpc_id               = "vpc-07c5a1e63b9041468"
     projectsecuritygroup = "sgproyect"
     ingress_rules = [
       { from_port = 3389, to_port = 3389, protocol = "tcp", cidr_blocks = ["10.0.0.0/8"] },

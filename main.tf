@@ -1,10 +1,10 @@
 module "module_security_group" {
-  source   = "./modules/security_group"
+  source    = "./modules/security_group"
   sg_config = var.sg_config
-  tags     = var.tags
-  project  = var.proyecto
-  account  = var.cuenta
-  vpc_id   = var.vpc_id
+  tags      = var.tags
+  project   = var.proyecto
+  account   = var.cuenta
+  vpc_id    = var.vpc_id
 }
 
 module "module_iam_config" {
